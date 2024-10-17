@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #331a00;
+    background-image: url('./back');
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.game-info {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#gameStatus {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: #575a57;
+}
+
+.mode-selection {
+    margin-bottom: 20px;
+}
+
+.mode-selection button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+}
+
+.mode-selection button.active {
+    background-color: white;
+    color: black;
+}
+
+.mode-selection button:hover {
+    background-color: white;
+    color: black;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+   
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell:active {
+    background-color: #ddd;
+}
